@@ -11,7 +11,7 @@ int main(){
         std::cout << "Number is not prime\n";
     }
     else{
-        while(i<a){
+        while(b<a){
             if(a % b == 0){
             std::cout << a << " is not prime\n";
             return 0;
