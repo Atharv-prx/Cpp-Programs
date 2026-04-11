@@ -7,7 +7,7 @@ int main(){
 
     srand(time(NULL));
 
-    int num = (rand() % 6) + 1 ; 
+    int num = (rand() % 5) + 1 ; 
 
     std::cout << num;
 
