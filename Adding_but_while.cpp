@@ -5,7 +5,7 @@ int main(){
     int sum=0;
     int last;
 
-    std::cout << "Write a number to find sum of their digits and also to find weather the sum is even or odd\n";
+    std::cout << "Write a number to find sum of their digits and also to find wheather the sum is even or odd\n";
     std::cin >> number;
 
     while (number !=0){
