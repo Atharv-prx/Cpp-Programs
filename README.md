@@ -1,6 +1,6 @@
 # Cpp-Programs
 
-# 💻 C++ Programs Collection
+# C++ Programs Collection
 
 This repository contains a collection of **C++ programs** ranging from basic concepts to small real-world applications.
 
@@ -8,7 +8,7 @@ It reflects my journey of applying programming logic to build practical and prob
 
 ---
 
-## 📌 About This Repository
+## About This Repository
 
 * Covers a variety of C++ programs (basic → intermediate)
 * Focus on logic building and real-world problem solving
@@ -16,7 +16,7 @@ It reflects my journey of applying programming logic to build practical and prob
 
 ---
 
-## 🧩 Programs Included
+## Programs Included
 
 ### 🔹 Basic Programs
 
@@ -35,18 +35,18 @@ It reflects my journey of applying programming logic to build practical and prob
 ### 🔹 Logic-Based Programs
 
 * Pattern Printing (not yet done)
-* Number Reversal (not yet done)
+* Number Reversal 
 * Menu-driven programs (not yet done)
 
 ### 🔹 Mini Projects
 
-* 🏦 Basic Banking System
-* 🎯 Simple Interest Calculator (not yet done)
-* 📊 Grade Calculator (not yet done)
+* Basic Banking System
+* Simple Interest Calculator (not yet done)
+* Grade Calculator (not yet done)
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```bash
 Cpp-Programs/
@@ -59,7 +59,7 @@ Cpp-Programs/
 
 ---
 
-## 🎯 Goals
+## Goals
 
 * Strengthen **problem-solving skills**
 * Improve **C++ programming fundamentals**
@@ -68,7 +68,7 @@ Cpp-Programs/
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 * Language: C++
 * Editor: VS Code
@@ -76,7 +76,7 @@ Cpp-Programs/
 
 ---
 
-## 📈 Progress Tracker
+## Progress Tracker
 
 * ✅ Basic Programs
 * ✅ Mathematical Programs
@@ -85,7 +85,7 @@ Cpp-Programs/
 
 ---
 
-## 🚀 Future Additions
+## Future Additions
 
 * File handling programs
 * Object-Oriented Programming (OOP) concepts
@@ -93,16 +93,16 @@ Cpp-Programs/
 
 ---
 
-## 🤝 Contributions
+## Contributions
 
 This is a personal learning repository, so contributions are currently not open.
 
 ---
 
-## 📌 Note
+## Note
 
 This repository is part of my continuous learning journey. Code quality and complexity will improve over time.
 
 ---
 
-⭐ Feel free to explore and follow my progress!
+Feel free to explore and follow my progress!
