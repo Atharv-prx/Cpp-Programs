@@ -21,8 +21,11 @@ int main (){
         for(int j=0 ; j < sizeof(options[i]) / sizeof(options[i][0]) ; j++){
             std::cout << options[i][j] << '\n';
         }
-        std::cin >> answer;
-        answer = tolower(answer); // to convert uppercase input to lowercase
+        do{
+            std::cout << "Enter your answer (a/b/c/d): \n";
+            std::cin >> answer;
+            answer = tolower(answer); // to convert uppercase input to lowercase
+        } while( answer < 'a' || answer > 'd');
 
         if(answer == answerKey[i]){
             std::cout << "Correct answer!\n";
