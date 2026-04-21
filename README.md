@@ -43,6 +43,8 @@ It reflects my journey of applying programming logic to build practical and prob
 * Basic Banking System
 * Simple Interest Calculator (not yet done)
 * Grade Calculator (not yet done)
+* CLI tool 
+* Basic Quiz
 
 ---
 
@@ -73,15 +75,6 @@ Cpp-Programs/
 * Language: C++
 * Editor: VS Code
 * Version Control: Git & GitHub
-
----
-
-## Progress Tracker
-
-* ✅ Basic Programs
-* ✅ Mathematical Programs
-* 🔄 Logic-Based Problems
-* 🔄 Mini Projects
 
 ---
 
