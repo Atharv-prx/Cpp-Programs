@@ -20,3 +20,4 @@ int fibonacci(int n){
     }
     return fibonacci(n-1) + fibonacci(n-2); //recursive case
 }
+// Time complexity O(2^n)
