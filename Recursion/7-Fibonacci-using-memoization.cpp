@@ -23,7 +23,7 @@ int main() {
     }
 
     std::cout << fib(n, dp);
-    std::cout << dp[n]; // this will print the nth Fibonacci number from the dp array
 
     return 0;
 }
+// Time complexity O(n) due to memoization
