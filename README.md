@@ -1,18 +1,11 @@
 # Cpp-Programs
 
-# C++ Programs Collection
-
-This repository contains a collection of **C++ programs** ranging from basic concepts to small real-world applications.
-
-It reflects my journey of applying programming logic to build practical and problem-solving based programs.
-
----
-
 ## About This Repository
 
 * Covers a variety of C++ programs (basic → intermediate)
 * Focus on logic building and real-world problem solving
 * Continuously updated with new programs
+* This repository reflects my journey of applying programming logic to build practical and problem-solving based programs.
 
 ---
 
@@ -20,31 +13,11 @@ It reflects my journey of applying programming logic to build practical and prob
 
 ### 🔹 Basic Programs
 
-* Calculator
-* Even/Odd Checker
-* Number Palindrome
-* Factorial Calculator (not yet done)
-
 ### 🔹 Mathematical Programs
-
-* Find length of Hypotenuse
-* Prime Number Check
-* Fibonacci Series (not yet done)
-* Armstrong Number (not yet done)
  
 ### 🔹 Logic-Based Programs
 
-* Pattern Printing (not yet done)
-* Number Reversal 
-* Menu-driven programs (not yet done)
-
 ### 🔹 Mini Projects
-
-* Basic Banking System
-* Simple Interest Calculator (not yet done)
-* Grade Calculator (not yet done)
-* CLI tool 
-* Basic Quiz
 
 ---
 
@@ -75,14 +48,6 @@ Cpp-Programs/
 * Language: C++
 * Editor: VS Code
 * Version Control: Git & GitHub
-
----
-
-## Future Additions
-
-* File handling programs
-* Object-Oriented Programming (OOP) concepts
-* Advanced mini projects
 
 ---
 
