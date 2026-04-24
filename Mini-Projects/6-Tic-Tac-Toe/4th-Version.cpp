@@ -1,6 +1,5 @@
 //Adding level difficulty 
 //Using Minmax Algorithm for computer move
-//******going to add hard difficulty later********* 
 
 #include <iostream>
 #include <ctime>
@@ -226,10 +225,93 @@ void mediumMove(char *spaces , char computer){
     }
 }
 
+int minimax(char *spaces, bool isMaximizing){
+
+    char player = 'X';
+    char computer = 'O';
+
+    // Base cases
+    if(isWinner(spaces, computer)) return 10;  //Stop recusrion when computer wins-good
+    if(isWinner(spaces, player)) return -10;   //Stop recursion when player wins-bad
+
+    // Draw case - no more moves left
+    bool movesLeft = false;
+    for(int i = 0; i < 9; i++){
+        if(spaces[i] == ' '){
+            movesLeft = true;
+            break;
+        }
+    }
+    if(!movesLeft) return 0;
+
+    if(isMaximizing){  //Recursive part - AI tries to maximize score
+        int bestScore = -1000;
+
+        for(int i = 0; i < 9; i++){ //Try all moves
+            if(spaces[i] == ' '){
+                spaces[i] = computer;
+
+                int score = minimax(spaces, false); //After AI turn, player turn
+
+                spaces[i] = ' '; // undo move
+
+                if(score > bestScore){ //Maximizing score for computer
+                    bestScore = score;
+                }
+            }
+        }
+        return bestScore;
+    }
+    else{ //Player's turn, minimizing score for computer
+        int bestScore = 1000;
+
+        for(int i = 0; i < 9; i++){
+            if(spaces[i] == ' '){
+                spaces[i] = player;
+
+                int score = minimax(spaces, true); //After player turn, AI turn again
+
+                spaces[i] = ' '; // undo move
+
+                if(score < bestScore){ //Minimizing score for computer
+                    bestScore = score;
+                }
+            }
+        }
+        return bestScore;
+    }
+}
+
+int findBestMove(char *spaces){
+
+    int bestScore = -1000;
+    int bestMove = -1;
+
+    for(int i = 0; i < 9; i++){  // Only checks empty spaces for best move
+        if(spaces[i] == ' '){
+            spaces[i] = 'O';
+
+            int score = minimax(spaces, false); // Computer is maximizing player, so we call minimax with false to evaluate opponent's response
+
+            spaces[i] = ' '; // undo, without this board gets permanently changed
+
+            if(score > bestScore){ //Picking best move for computer
+                bestScore = score;
+                bestMove = i;
+            }
+        }
+    }
+
+    return bestMove;
+}
+
 void hardMove(char *spaces , char computer){
-    // Placeholder for Minimax algorithm implementation
-    std::cout << "Hard difficulty not implemented yet. Computer plays randomly.\n";
-    easyMove(spaces, computer);
+    int bestMove = findBestMove(spaces);
+
+    if(bestMove != -1){
+        spaces[bestMove] = computer;
+        std::cout << "Computer plays optimal move\n";
+    }
 }
 
 bool checkWinner(char *spaces , char player , char computer){
